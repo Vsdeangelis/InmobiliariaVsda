@@ -262,3 +262,4 @@ C:\Users\PC\OneDrive\Documentos\GitHub\Inmobiliaria\Inmobiliaria\obj\Debug\net5.
 C:\Users\PC\OneDrive\Documentos\GitHub\Inmobiliaria\Inmobiliaria\obj\Debug\net5.0\Razor\Views\TipoInmueble\Create.cshtml.g.cs
 C:\Users\PC\OneDrive\Documentos\GitHub\Inmobiliaria\Inmobiliaria\obj\Debug\net5.0\Razor\Views\TipoInmueble\Edit.cshtml.g.cs
 C:\Users\PC\OneDrive\Documentos\GitHub\Inmobiliaria\Inmobiliaria\obj\Debug\net5.0\Razor\Views\TipoInmueble\Delete.cshtml.g.cs
+C:\Users\PC\OneDrive\Documentos\GitHub\Inmobiliaria\Inmobiliaria\obj\Debug\net5.0\Razor\Views\Inmueble\Index.cshtml.g.cs
