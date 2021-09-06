@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Inmobiliaria.Models.TipoInmueble>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Lista de Tipo de Inmuebles</h3>
+
+<p>
+    <a asp-action="Create">Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.IdTipo }) |
+                @Html.ActionLink("Details", "Details", new { id = item.IdTipo }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.IdTipo })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

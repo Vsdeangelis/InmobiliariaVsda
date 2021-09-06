@@ -6654,11 +6654,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Inmobiliaria\\Inmobiliaria\\Inmobiliaria.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documentos\\GitHub\\Inmobiliaria\\Inmobiliaria\\Inmobiliaria.csproj",
       "projectName": "Inmobiliaria",
-      "projectPath": "C:\\Users\\PC\\source\\repos\\Inmobiliaria\\Inmobiliaria\\Inmobiliaria.csproj",
+      "projectPath": "C:\\Users\\PC\\OneDrive\\Documentos\\GitHub\\Inmobiliaria\\Inmobiliaria\\Inmobiliaria.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\source\\repos\\Inmobiliaria\\Inmobiliaria\\obj\\",
+      "outputPath": "C:\\Users\\PC\\OneDrive\\Documentos\\GitHub\\Inmobiliaria\\Inmobiliaria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

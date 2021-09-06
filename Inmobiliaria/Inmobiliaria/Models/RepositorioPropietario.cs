@@ -23,7 +23,6 @@ namespace Inmobiliaria.Models
             {
                 res= Modificar(id, p);
             }
-            
             return res; 
         }
         public int Insert( Persona p)
@@ -51,7 +50,6 @@ namespace Inmobiliaria.Models
                     res = Convert.ToInt32(comm.ExecuteScalar());
                     conn.Close();
                     p.IdPersona = res;
-
                 }
             }
             return res;
@@ -195,7 +193,5 @@ namespace Inmobiliaria.Models
             }
             return res; 
         }
-        
-
     }
 }
