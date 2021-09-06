@@ -50,12 +50,12 @@ namespace Inmobiliaria.Models
             int res = -1;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = $"UPDATE Tipos SET Tipo=@tipo, Estado=@estado," +
-                    $"WHERE IdTipo = @id";
+                string sql = $"UPDATE Tipos SET Tipo=@tipo, Estado=@estado " +
+                    $"WHERE IdTipo = @id;";
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     command.CommandType = CommandType.Text;
-                    command.Parameters.AddWithValue("@id", id);
+                    command.Parameters.Add("@id", SqlDbType.Int).Value = id;
                     command.Parameters.AddWithValue("@tipo", tipo.Tipo);
                     command.Parameters.AddWithValue("@estado", 1);
                     connection.Open();
@@ -70,7 +70,7 @@ namespace Inmobiliaria.Models
             TipoInmueble tipo = null;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = $"SELECT IdTipo, Nombre, Estado FROM Tipos WHERE Tipo=@nombre;";
+                string sql = $"SELECT IdTipo, Tipo, Estado FROM Tipos WHERE Tipo=@nombre;";
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     command.Parameters.AddWithValue("@nombre", nombre);

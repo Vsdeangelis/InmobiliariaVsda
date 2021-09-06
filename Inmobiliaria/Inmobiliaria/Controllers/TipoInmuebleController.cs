@@ -61,16 +61,18 @@ namespace Inmobiliaria.Controllers
         // GET: TipoInmuebleController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var resp = repositorio.ObtenerPorId(id);
+            return View(resp);
         }
 
         // POST: TipoInmuebleController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, TipoInmueble res)
         {
             try
             {
+                repositorio.Alta(id, res);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -82,16 +84,19 @@ namespace Inmobiliaria.Controllers
         // GET: TipoInmuebleController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var res = repositorio.ObtenerPorId(id);
+            return View(res);
         }
 
         // POST: TipoInmuebleController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, TipoInmueble t)
         {
             try
             {
+                repositorio.Baja(id);
+                TempData["Mensaje"] = "Eliminación realizada correctamente";
                 return RedirectToAction(nameof(Index));
             }
             catch
